@@ -1,6 +1,7 @@
 ﻿using AliErguc.Blog.Business.Interfaces;
 using AliErguc.Blog.DataAccess.Interfaces;
 using AliErguc.Blog.Entities.Concrete;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -16,7 +17,8 @@ namespace AliErguc.Blog.Business.Concrete
             _genericDal = genericDal;
         }
 
-        public async Task<List<Category>> GetAllSortedBy()
+  
+        public async Task<List<Category>> GetAllSortedByAsync()
         {
             return await _genericDal.GetAllAsync(I=>I.Id);
         }

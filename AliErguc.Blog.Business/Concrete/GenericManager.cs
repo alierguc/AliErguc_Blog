@@ -22,7 +22,7 @@ namespace AliErguc.Blog.Business.Concrete
              await _genericDal.AddAsync(_entity);
         }
 
-        public async Task<TableEntity> FindById(int _id)
+        public async Task<TableEntity> FindByIdAsync(int _id)
         {
             return await _genericDal.FindByIdAsync(_id);
         }

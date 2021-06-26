@@ -8,6 +8,6 @@ namespace AliErguc.Blog.Business.Interfaces
 {
     public interface ICategoryServices : IGenericServices<Category>
     {
-        Task<List<Category>> GetAllSortedBy();
+        Task<List<Category>> GetAllSortedByAsync();
     }
 }

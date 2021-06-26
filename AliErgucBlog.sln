@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AliErguc.Blog.UnitTest", "A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AliErguc.Blog.Core", "AliErguc.Blog.Core\AliErguc.Blog.Core.csproj", "{C944DCC9-60B0-4C2B-9DEF-E376C8DB70D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AliErguc.Blog.WebApi", "AliErguc.Blog.WebApi\AliErguc.Blog.WebApi.csproj", "{CBFACE57-2E8E-4258-B9C7-E6424AE9077B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AliErguc.Blog.WebApi", "AliErguc.Blog.WebApi\AliErguc.Blog.WebApi.csproj", "{CBFACE57-2E8E-4258-B9C7-E6424AE9077B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AliErguc.Blog.Dto", "AliErguc.Blog.Dto\AliErguc.Blog.Dto.csproj", "{04C33AB5-D385-46B7-A9A8-43A4E8EE9FC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AliErguc.Blog.Dto", "AliErguc.Blog.Dto\AliErguc.Blog.Dto.csproj", "{04C33AB5-D385-46B7-A9A8-43A4E8EE9FC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AliErguc.Blog.WebUI", "AliErguc.Blog.WebUI\AliErguc.Blog.WebUI.csproj", "{F4EF9D57-8D74-435D-93A0-0D01DABBF2B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{04C33AB5-D385-46B7-A9A8-43A4E8EE9FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04C33AB5-D385-46B7-A9A8-43A4E8EE9FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04C33AB5-D385-46B7-A9A8-43A4E8EE9FC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4EF9D57-8D74-435D-93A0-0D01DABBF2B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4EF9D57-8D74-435D-93A0-0D01DABBF2B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4EF9D57-8D74-435D-93A0-0D01DABBF2B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4EF9D57-8D74-435D-93A0-0D01DABBF2B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

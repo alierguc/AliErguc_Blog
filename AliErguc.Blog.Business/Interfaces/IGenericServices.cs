@@ -11,7 +11,7 @@ namespace AliErguc.Blog.Business.Interfaces
     {
         Task<List<TableEntity>> GetAllAsync(); // Tüm Kategorileri Al
 
-        Task<TableEntity> FindById(int _id);
+        Task<TableEntity> FindByIdAsync(int _id);
         Task AddAsync(TableEntity _entity); // İlgili Entity'e göre Ekle
         Task UpdateAsync(TableEntity _entity); // İlgili Entity'e göre Güncelle
         Task RemoveAsync(TableEntity _entity); // İlgili Entity'e göre Sil
