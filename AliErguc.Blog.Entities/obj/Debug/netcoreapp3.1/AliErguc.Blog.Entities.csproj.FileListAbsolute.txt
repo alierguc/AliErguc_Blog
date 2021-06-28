@@ -1,6 +1,7 @@
 D:\myNETProjects\AliErgucBlog\AliErguc.Blog.Entities\bin\Debug\netcoreapp3.1\AliErguc.Blog.Entities.deps.json
 D:\myNETProjects\AliErgucBlog\AliErguc.Blog.Entities\bin\Debug\netcoreapp3.1\AliErguc.Blog.Entities.dll
 D:\myNETProjects\AliErgucBlog\AliErguc.Blog.Entities\bin\Debug\netcoreapp3.1\AliErguc.Blog.Entities.pdb
+D:\myNETProjects\AliErgucBlog\AliErguc.Blog.Entities\obj\Debug\netcoreapp3.1\AliErguc.Blog.Entities.csprojAssemblyReference.cache
 D:\myNETProjects\AliErgucBlog\AliErguc.Blog.Entities\obj\Debug\netcoreapp3.1\AliErguc.Blog.Entities.AssemblyInfoInputs.cache
 D:\myNETProjects\AliErgucBlog\AliErguc.Blog.Entities\obj\Debug\netcoreapp3.1\AliErguc.Blog.Entities.AssemblyInfo.cs
 D:\myNETProjects\AliErgucBlog\AliErguc.Blog.Entities\obj\Debug\netcoreapp3.1\AliErguc.Blog.Entities.csproj.CoreCompileInputs.cache

@@ -2,16 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.10.0" />
-    <PackageReference Include="NUnit" Version="3.13.2" />
-    <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\AliErguc.Blog.Business\AliErguc.Blog.Business.csproj" />
+    <ProjectReference Include="..\AliErguc.Blog.Dto\AliErguc.Blog.Dto.csproj" />
   </ItemGroup>
 
 </Project>

@@ -35,3 +35,4 @@ D:\myNETProjects\AliErgucBlog\AliErguc.Blog.WebUI\obj\Debug\netcoreapp3.1\AliErg
 D:\myNETProjects\AliErgucBlog\AliErguc.Blog.WebUI\obj\Debug\netcoreapp3.1\AliErguc.Blog.WebUI.pdb
 D:\myNETProjects\AliErgucBlog\AliErguc.Blog.WebUI\obj\Debug\netcoreapp3.1\AliErguc.Blog.WebUI.genruntimeconfig.cache
 D:\myNETProjects\AliErgucBlog\AliErguc.Blog.WebUI\obj\Debug\netcoreapp3.1\AliErguc.Blog.WebUI.csproj.CopyComplete
+D:\myNETProjects\AliErgucBlog\AliErguc.Blog.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Home\AboutMe.cshtml.g.cs
