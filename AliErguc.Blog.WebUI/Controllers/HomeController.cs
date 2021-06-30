@@ -1,4 +1,6 @@
-﻿using AliErguc.Blog.WebUI.Models;
+﻿using AliErguc.Blog.Business.Interfaces;
+using AliErguc.Blog.WebUI.ApiServices.Interfaces;
+using AliErguc.Blog.WebUI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -12,15 +14,17 @@ namespace AliErguc.Blog.WebUI.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IBlogApiServices _blogApiServices;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger,IBlogApiServices blogApiServices)
         {
             _logger = logger;
+            _blogApiServices = blogApiServices;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            return View(await _blogApiServices.GetAllAsync());
         }
 
         public IActionResult Privacy()

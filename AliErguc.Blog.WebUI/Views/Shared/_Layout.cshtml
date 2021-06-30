@@ -1,163 +1,147 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - AliErguc.Blog.WebUI</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-    <link href="~/material/css/material-kit.css" rel="stylesheet" />
-    <link href="~/material/demo/demo.css" rel="stylesheet" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blog Home - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    @*<link href="/css/simplex.css" rel="stylesheet">*@
+    <link href="~/css/flatly.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="/css/blog-home.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
-            <div class="container">
-                <div class="navbar-translate">
-                    <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
-                        Ali Ergüç - BLOG
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="navbar-toggler-icon"></span>
-                        <span class="navbar-toggler-icon"></span>
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="dropdown nav-item">
-                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                                <i class="material-icons">apps</i> Kategoriler
-                            </a>
-                            <div class="dropdown-menu dropdown-with-icons">
-                                <a href="./index.html" class="dropdown-item">
-                                    <i class="material-icons">layers</i> Yazılım
-                                </a>
-                                <a href="https://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html" class="dropdown-item">
-                                    <i class="material-icons">layers</i> Felsefe
-                                </a>
-                                <a href="https://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html" class="dropdown-item">
-                                    <i class="material-icons">layers</i> Makaleler
-                                </a>
-                                <a href="https://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html" class="dropdown-item">
-                                    <i class="material-icons">layers</i> Hakkımda
-                                </a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
-                                <i class="material-icons">star</i><span style="font-size:24px;">C</span>urriculum <span style="font-size: 24px;">V</span>itae
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.creative-tim.com/product/material-kit-pro" target="_blank">
-                                <i class="material-icons">info</i> Hakkımda
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://github.com/alierguc" target="_blank" data-original-title="Github'dan Takip Et" rel="nofollow">
-                                <i class="fa fa-github"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.linkedin.com/in/ali-erg%C3%BC%C3%A7-972ba6164/" target="_blank" data-original-title="Linkedin'den Bağlantı Kur" rel="nofollow">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/alierguc1/" target="_blank" data-original-title="Instagram'dan Takip Et" rel="nofollow">
-                                <i class="fa fa-instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Start Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            Anasayfa
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav ms-md-auto">
+                    <li class="nav-item">
+                        <a target="_blank" rel="noopener" class="nav-link" href="https://github.com/thomaspark/bootswatch/"><i class="fa fa-github"></i> GitHub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" rel="noopener" class="nav-link" href="https://twitter.com/bootswatch"><i class="fa fa-instagram"></i> Instagram</a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" rel="noopener" class="nav-link" href="https://twitter.com/bootswatch"><i class="fa fa-linkedin"></i> Linkedin</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        <!-- Page header with logo and tagline-->
-        <div class="page-header header-filter clear-filter purple-filter" data-parallax="true" style="background-image: url('../material/img/bg.jpg');">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto">
-                        <div class="brand">
-                            <h1>~ Konfüçyus</h1>
-                            <h3>Etraflıca çalış, doğru bir şekilde araştır, dikkatlice düşün, düşündüklerini gözden geçir, ciddi ve samimi bir şekilde uygula.</h3>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Blog Entries Column -->
+            <div class="col-md-8">
+
+                <!-- Blog Post -->
+                <div class="my-4">
+                    @RenderBody()
+                </div>
+
+
+            </div>
+
+            <!-- Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!-- Search Widget -->
+                <div class="card border-info my-4">
+                    <h5 class="card-header">Search</h5>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">Go!</button>
+                            </span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </header>
-    <div class="index-page sidebar-collapse">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="footer" data-background-color="black">
-        <div class="container">
-            <nav class="float-left">
-                <ul>
-                    <li>
-                        <a href="https://www.creative-tim.com/">
-                            Creative Tim
-                        </a>
+                <!-- Categories Widget -->
+                <ul class="list-group">
+                    <li class="list-group-item d-flex bg-primary text-white list-group-item-action justify-content-between align-items-center">
+                        Kategoriler
                     </li>
-                    <li>
-                        <a href="https://www.creative-tim.com/presentation">
-                            Hakkımda
-                        </a>
+                    <li class="list-group-item d-flex list-group-item-action justify-content-between align-items-center">
+                        Dapibus ac facilisis in
+                        <span class="badge bg-primary rounded-pill">2</span>
                     </li>
-                    <li>
-                        <a href="https://www.creative-tim.com/blog">
-                            Özgeçmişim
-                        </a>
+                    <li class="list-group-item d-flex list-group-item-action justify-content-between align-items-center">
+                        Dapibus ac facilisis in
+                        <span class="badge bg-primary rounded-pill">2</span>
                     </li>
-                    <li>
-                        <a href="https://www.creative-tim.com/license">
-                            Licenses
-                        </a>
+                    <li class="list-group-item d-flex list-group-item-action justify-content-between align-items-center">
+                        Dapibus ac facilisis in
+                        <span class="badge bg-primary rounded-pill">2</span>
+                    </li>
+                    <li class="list-group-item d-flex list-group-item-action justify-content-between align-items-center">
+                        Dapibus ac facilisis in
+                        <span class="badge bg-primary rounded-pill">2</span>
+                    </li>
+                    <li class="list-group-item d-flex list-group-item-action justify-content-between align-items-center">
+                        Dapibus ac facilisis in
+                        <span class="badge bg-primary rounded-pill">2</span>
+                    </li>
+                    <li class="list-group-item d-flex list-group-item-action justify-content-between align-items-center">
+                        Dapibus ac facilisis in
+                        <span class="badge bg-primary rounded-pill">2</span>
                     </li>
                 </ul>
-            </nav>
-            <div class="copyright float-right">
-                &copy;
-                <script>
-                    document.write(new Date().getFullYear())
-                </script>, made with <i class="material-icons">favorite</i> by
-                <a href="https://www.creative-tim.com/" target="_blank">Creative Tim</a> for a better web.
+                @*@await Component.InvokeAsync("CategoryList")*@
+
+                <!-- Side Widget -->
+                <div class="card border-info my-4">
+                    <h5 class="card-header">Side Widget</h5>
+                    <div class="card-body">
+                        You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+                    </div>
+                </div>
+
             </div>
+
         </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+    <!-- Footer -->
+    <footer class="py-5 bg-primary">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+        </div>
+        <!-- /.container -->
     </footer>
 
-    <script src="~/material/js/core/popper.min.js"></script>
-    <script src="~/material/js/core/jquery.min.js"></script>
-    <script src="~/material/js/core/bootstrap-material-design.min.js"></script>
-    <script src="~/material/js/material-kit.js"></script>
-    <script src="~/material/js/plugins/bootstrap-datetimepicker.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <script src="~/js/scripts.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script>
-        $(document).ready(function () {
-            //init DateTimePickers
-            materialKit.initFormExtendedDatetimepickers();
+    <!-- Bootstrap core JavaScript -->
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/twitter-bootstrap/js/bootstrap.bundle.min.js"></script>
 
-            // Sliders Init
-            materialKit.initSliders();
-        });
-
-
-        function scrollToDownload() {
-            if ($('.section-download').length != 0) {
-                $("html, body").animate({
-                    scrollTop: $('.section-download').offset().top
-                }, 1000);
-            }
-        }
-    </script>
-    @RenderSection("Scripts", required: false)
 </body>
+
 </html>

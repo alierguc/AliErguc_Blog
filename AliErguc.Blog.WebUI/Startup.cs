@@ -1,3 +1,6 @@
+using AliErguc.Blog.Business.Interfaces;
+using AliErguc.Blog.WebUI.ApiServices.Concrete;
+using AliErguc.Blog.WebUI.ApiServices.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -22,6 +25,8 @@ namespace AliErguc.Blog.WebUI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHttpClient<IBlogApiServices, BlogApiManager>();
+            services.AddHttpClient<ICategoryApiServices, CategoryApiManager>();
             services.AddControllersWithViews();
         }
 

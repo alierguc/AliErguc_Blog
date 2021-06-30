@@ -4,6 +4,280 @@
     "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.WebUI\\AliErguc.Blog.WebUI.csproj": {}
   },
   "projects": {
+    "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Business\\AliErguc.Blog.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Business\\AliErguc.Blog.Business.csproj",
+        "projectName": "AliErguc.Blog.Business",
+        "projectPath": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Business\\AliErguc.Blog.Business.csproj",
+        "packagesPath": "C:\\Users\\alier\\.nuget\\packages\\",
+        "outputPath": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alier\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.DataAccess\\AliErguc.Blog.DataAccess.csproj": {
+                "projectPath": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.DataAccess\\AliErguc.Blog.DataAccess.csproj"
+              },
+              "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Entities\\AliErguc.Blog.Entities.csproj": {
+                "projectPath": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Entities\\AliErguc.Blog.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[10.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Core\\AliErguc.Blog.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Core\\AliErguc.Blog.Core.csproj",
+        "projectName": "AliErguc.Blog.Core",
+        "projectPath": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Core\\AliErguc.Blog.Core.csproj",
+        "packagesPath": "C:\\Users\\alier\\.nuget\\packages\\",
+        "outputPath": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alier\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.DataAccess\\AliErguc.Blog.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.DataAccess\\AliErguc.Blog.DataAccess.csproj",
+        "projectName": "AliErguc.Blog.DataAccess",
+        "projectPath": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.DataAccess\\AliErguc.Blog.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\alier\\.nuget\\packages\\",
+        "outputPath": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alier\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Core\\AliErguc.Blog.Core.csproj": {
+                "projectPath": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Core\\AliErguc.Blog.Core.csproj"
+              },
+              "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Entities\\AliErguc.Blog.Entities.csproj": {
+                "projectPath": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Entities\\AliErguc.Blog.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Entities\\AliErguc.Blog.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Entities\\AliErguc.Blog.Entities.csproj",
+        "projectName": "AliErguc.Blog.Entities",
+        "projectPath": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Entities\\AliErguc.Blog.Entities.csproj",
+        "packagesPath": "C:\\Users\\alier\\.nuget\\packages\\",
+        "outputPath": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alier\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.WebUI\\AliErguc.Blog.WebUI.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -31,7 +305,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Business\\AliErguc.Blog.Business.csproj": {
+                "projectPath": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Business\\AliErguc.Blog.Business.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
