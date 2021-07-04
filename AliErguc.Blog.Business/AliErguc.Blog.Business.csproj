@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AliErguc.Blog.DataAccess\AliErguc.Blog.DataAccess.csproj" />
+    <ProjectReference Include="..\AliErguc.Blog.Dto\AliErguc.Blog.Dto.csproj" />
     <ProjectReference Include="..\AliErguc.Blog.Entities\AliErguc.Blog.Entities.csproj" />
   </ItemGroup>
 

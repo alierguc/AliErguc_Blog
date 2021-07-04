@@ -27,8 +27,10 @@ namespace AliErguc.Blog.WebApi.Mapping
             CreateMap<Category, CategoryAddDto>();
             CreateMap<CategoryListDto, Category>();
             CreateMap<Category, CategoryListDto>();
+            CreateMap<Category, CategoryListDto>();
             CreateMap<CategoryUpdateDto, Category>();
             CreateMap<Category, CategoryUpdateDto>();
+
 
         }
     }

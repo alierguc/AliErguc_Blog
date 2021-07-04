@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OaODmoB/dcNMQIQMZNAof5axUzmTiDG+71LAK+YU3W6Kv+adYO5qCT3z3pWfmnXSzGrG25HCCEDj9hvi/m6wng==",
+  "dgSpecHash": "fOAUp57EKLXtUdgzHIILIIGgBAjCze7cC/Z0aIxYmN/jmvTJ1fnSHC5bsZWAsl20zEgiqqiulUL7OJ8n2AA6sg==",
   "success": true,
   "projectFilePath": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.WebApi\\AliErguc.Blog.WebApi.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\alier\\.nuget\\packages\\fluentvalidation\\10.2.3\\fluentvalidation.10.2.3.nupkg.sha512",
     "C:\\Users\\alier\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.2.3\\fluentvalidation.aspnetcore.10.2.3.nupkg.sha512",
     "C:\\Users\\alier\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.2.3\\fluentvalidation.dependencyinjectionextensions.10.2.3.nupkg.sha512",
+    "C:\\Users\\alier\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.14\\microsoft.aspnetcore.authentication.jwtbearer.3.1.14.nupkg.sha512",
     "C:\\Users\\alier\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.14\\microsoft.aspnetcore.jsonpatch.3.1.14.nupkg.sha512",
     "C:\\Users\\alier\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.14\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.14.nupkg.sha512",
     "C:\\Users\\alier\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

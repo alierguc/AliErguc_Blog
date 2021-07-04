@@ -106,7 +106,7 @@ namespace AliErguc.Blog.DataAccess.Migrations
                         .HasAnnotation("SqlServer:IdentitySeed", 1)
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Name")
+                    b.Property<string>("Name")
                         .HasMaxLength(100)
                         .HasColumnType("int");
 

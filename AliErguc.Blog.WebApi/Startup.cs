@@ -1,5 +1,8 @@
 using AliErguc.Blog.Business.IoC.MicrosoftIoC;
+using AliErguc.Blog.Core.Constants;
+using AliErguc.Blog.WebApi.CustomFilters;
 using AutoMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -7,10 +10,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace AliErguc.Blog.WebApi
@@ -28,7 +33,24 @@ namespace AliErguc.Blog.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAutoMapper(typeof(Startup));
+        
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(opt=> {
+                    opt.RequireHttpsMetadata = false;
+                    opt.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidIssuer = JwtInfo.ISSUER,
+                        ValidAudience = JwtInfo.AUDIENCE,
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JwtInfo.SECURITY_KEY)),
+                        ValidateLifetime = true, // kullanýmý dolduðunda yok et
+                        ValidateAudience = true,
+                        ValidateIssuer = true, // 
+                        ClockSkew = TimeSpan.Zero, // sunucular arasýnda zaman farký koyma.
+
+                    };
+                });
             services.AddDependencies();
+            services.AddScoped(typeof(ValidId<>));
             services.AddControllers().AddNewtonsoftJson(opt =>
             {
                 opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
@@ -68,11 +90,12 @@ namespace AliErguc.Blog.WebApi
 
             app.UseRouting();
             app.UseStaticFiles();
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                 endpoints.MapControllers();
             });
         }
     }

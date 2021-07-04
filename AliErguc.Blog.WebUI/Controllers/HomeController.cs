@@ -22,6 +22,11 @@ namespace AliErguc.Blog.WebUI.Controllers
             _blogApiServices = blogApiServices;
         }
 
+        public async Task<IActionResult> BlogDetail(int id)
+        {
+            return View(await _blogApiServices.GetByIdAsync(id));
+        }
+
         public async Task<IActionResult> Index()
         {
             return View(await _blogApiServices.GetAllAsync());

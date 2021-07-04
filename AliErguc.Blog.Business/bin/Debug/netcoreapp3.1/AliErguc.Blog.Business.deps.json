@@ -9,6 +9,7 @@
       "AliErguc.Blog.Business/1.0.0": {
         "dependencies": {
           "AliErguc.Blog.DataAccess": "1.0.0",
+          "AliErguc.Blog.Dto": "1.0.0",
           "AliErguc.Blog.Entities": "1.0.0",
           "FluentValidation.AspNetCore": "10.2.3"
         },
@@ -1050,6 +1051,14 @@
           "AliErguc.Blog.DataAccess.dll": {}
         }
       },
+      "AliErguc.Blog.Dto/1.0.0": {
+        "dependencies": {
+          "AliErguc.Blog.Entities": "1.0.0"
+        },
+        "runtime": {
+          "AliErguc.Blog.Dto.dll": {}
+        }
+      },
       "AliErguc.Blog.Entities/1.0.0": {
         "runtime": {
           "AliErguc.Blog.Entities.dll": {}
@@ -1748,6 +1757,11 @@
       "sha512": ""
     },
     "AliErguc.Blog.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AliErguc.Blog.Dto/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

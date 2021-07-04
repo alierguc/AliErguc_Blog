@@ -14,3 +14,5 @@ D:\myNETProjects\AliErgucBlog\AliErguc.Blog.Business\obj\Debug\netcoreapp3.1\Ali
 D:\myNETProjects\AliErgucBlog\AliErguc.Blog.Business\obj\Debug\netcoreapp3.1\AliErguc.Blog.Business.csproj.CopyComplete
 D:\myNETProjects\AliErgucBlog\AliErguc.Blog.Business\obj\Debug\netcoreapp3.1\AliErguc.Blog.Business.dll
 D:\myNETProjects\AliErgucBlog\AliErguc.Blog.Business\obj\Debug\netcoreapp3.1\AliErguc.Blog.Business.pdb
+D:\myNETProjects\AliErgucBlog\AliErguc.Blog.Business\bin\Debug\netcoreapp3.1\AliErguc.Blog.Dto.dll
+D:\myNETProjects\AliErgucBlog\AliErguc.Blog.Business\bin\Debug\netcoreapp3.1\AliErguc.Blog.Dto.pdb

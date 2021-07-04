@@ -1,10 +1,12 @@
 ﻿using AliErguc.Blog.Business.Interfaces;
 using AliErguc.Blog.Dto.BlogDtos;
+using AliErguc.Blog.Dto.CategoryBlogDtos;
 using AliErguc.Blog.Entities.Concrete;
 using AliErguc.Blog.WebApi.CustomFilters;
 using AliErguc.Blog.WebApi.Enums;
 using AliErguc.Blog.WebApi.Models;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -41,6 +43,7 @@ namespace AliErguc.Blog.WebApi.Controllers
         }
 
         [HttpPost("[action]")]
+        [Authorize]
         public async Task<IActionResult> CreateBlog([FromForm]BlogAddModel blogAddModel)
         {
 
@@ -66,7 +69,9 @@ namespace AliErguc.Blog.WebApi.Controllers
 
 
         [HttpPut("[action]/{id}")]
+        [Authorize]
         [ValidModel]
+  
         public async Task<IActionResult> UpdateBlog(int id, [FromForm] BlogUpdateModel blogUpdateModel)
         {
             if (id != blogUpdateModel.Id)
@@ -104,11 +109,26 @@ namespace AliErguc.Blog.WebApi.Controllers
         }
 
         [HttpDelete("[action]/{id}")]
+        [Authorize]
         [ValidModel]
         public async Task<IActionResult> DeleteBlog(int id)
         {
             await _blogServices.RemoveAsync(new BlogSection {Id=id });
             return Ok();
+        }
+
+        [HttpPost("addToCategory")]
+        public async Task<IActionResult> AddToCategory(CategoryBlogDto categoryBlogDto)
+        {
+            await _blogServices.AddToCategoryAsync(categoryBlogDto);
+            return Created("",categoryBlogDto);
+        }
+
+        [HttpPost("removeFromCategory")]
+        public async Task<IActionResult> RemoveFromCategory(CategoryBlogDto categoryBlogDto)
+        {
+            await _blogServices.RemoveToCategoryAsync(categoryBlogDto);
+            return NoContent();
         }
 
     }

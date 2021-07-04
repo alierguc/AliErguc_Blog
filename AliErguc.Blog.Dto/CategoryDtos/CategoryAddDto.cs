@@ -7,6 +7,6 @@ namespace AliErguc.Blog.Dto.CategoryDtos
 {
     public class CategoryAddDto : IDto
     {
-        public int Name { get; set; }
+        public string Name { get; set; }
     }
 }

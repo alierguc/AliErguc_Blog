@@ -8,6 +8,6 @@ namespace AliErguc.Blog.WebUI.Models
     public class CategoryListModel
     {
         public int Id { get; set; }
-        public int Name { get; set; }
+        public string Name { get; set; }
     }
 }

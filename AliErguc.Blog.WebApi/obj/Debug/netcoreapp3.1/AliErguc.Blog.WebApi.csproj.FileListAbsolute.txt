@@ -82,3 +82,4 @@ D:\myNETProjects\AliErgucBlog\AliErguc.Blog.WebApi\obj\Debug\netcoreapp3.1\AliEr
 D:\myNETProjects\AliErgucBlog\AliErguc.Blog.WebApi\obj\Debug\netcoreapp3.1\AliErguc.Blog.WebApi.dll
 D:\myNETProjects\AliErgucBlog\AliErguc.Blog.WebApi\obj\Debug\netcoreapp3.1\AliErguc.Blog.WebApi.pdb
 D:\myNETProjects\AliErgucBlog\AliErguc.Blog.WebApi\obj\Debug\netcoreapp3.1\AliErguc.Blog.WebApi.genruntimeconfig.cache
+D:\myNETProjects\AliErgucBlog\AliErguc.Blog.WebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll

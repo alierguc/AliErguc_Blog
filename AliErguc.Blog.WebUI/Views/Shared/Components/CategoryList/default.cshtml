@@ -1,0 +1,15 @@
+﻿@model List<CategoryListModel>
+
+<ul class="list-group">
+    <li class="list-group-item d-flex bg-primary text-white list-group-item-action justify-content-between align-items-center">
+        Kategoriler
+    </li>
+    @foreach (var category in Model)
+    {
+        <li class="list-group-item d-flex list-group-item-action justify-content-between align-items-center">
+            @category.Name
+            <span class="badge bg-primary rounded-pill">2</span>
+        </li>
+    }
+
+</ul>

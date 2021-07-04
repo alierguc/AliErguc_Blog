@@ -35,6 +35,9 @@
               "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.DataAccess\\AliErguc.Blog.DataAccess.csproj": {
                 "projectPath": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.DataAccess\\AliErguc.Blog.DataAccess.csproj"
               },
+              "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Dto\\AliErguc.Blog.Dto.csproj": {
+                "projectPath": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Dto\\AliErguc.Blog.Dto.csproj"
+              },
               "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Entities\\AliErguc.Blog.Entities.csproj": {
                 "projectPath": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Entities\\AliErguc.Blog.Entities.csproj"
               }
@@ -247,7 +250,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Entities\\AliErguc.Blog.Entities.csproj": {
+                "projectPath": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Entities\\AliErguc.Blog.Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -34,6 +34,7 @@
           "AliErguc.Blog.Business": "1.0.0",
           "AliErguc.Blog.Dto": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.14",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "3.1.14",
           "Swashbuckle.AspNetCore": "5.6.3",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
@@ -383,6 +384,20 @@
         },
         "compile": {
           "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.14": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.6.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "assemblyVersion": "3.1.14.0",
+            "fileVersion": "3.100.1421.16608"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
         }
       },
       "Microsoft.AspNetCore.JsonPatch/3.1.14": {
@@ -1466,6 +1481,7 @@
       "AliErguc.Blog.Business/1.0.0": {
         "dependencies": {
           "AliErguc.Blog.DataAccess": "1.0.0",
+          "AliErguc.Blog.Dto": "1.0.0",
           "AliErguc.Blog.Entities": "1.0.0",
           "FluentValidation.AspNetCore": "10.2.3"
         },
@@ -1499,6 +1515,9 @@
         }
       },
       "AliErguc.Blog.Dto/1.0.0": {
+        "dependencies": {
+          "AliErguc.Blog.Entities": "1.0.0"
+        },
         "runtime": {
           "AliErguc.Blog.Dto.dll": {}
         },
@@ -3176,6 +3195,13 @@
       "sha512": "sha512-jwrDR0O9RA6IvXkON5M+UBSW2fNtsR2a9dw3dZYNslLzoaPd8K+NiJpn6FPIw63PHnwxsN9muiiNuKXf8HMpaw==",
       "path": "fluentvalidation.dependencyinjectionextensions/10.2.3",
       "hashPath": "fluentvalidation.dependencyinjectionextensions.10.2.3.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/HlfEeETtagEM+HuLr7VzXAd6MkxLVUbXRWDEvzMPe3cNXl8ZbuPv8oaiAd99sBhXlOKemeQVZooi8nOeekuFA==",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/3.1.14",
+      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.3.1.14.nupkg.sha512"
     },
     "Microsoft.AspNetCore.JsonPatch/3.1.14": {
       "type": "package",

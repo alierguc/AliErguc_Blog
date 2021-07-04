@@ -1,5 +1,6 @@
 ﻿using AliErguc.Blog.Business.Concrete;
 using AliErguc.Blog.Business.Interfaces;
+using AliErguc.Blog.Business.Utilities.JwtUtil;
 using AliErguc.Blog.DataAccess.Concrete.EFCore.Repositories;
 using AliErguc.Blog.DataAccess.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
@@ -25,17 +26,14 @@ namespace AliErguc.Blog.Business.IoC.MicrosoftIoC
             services.AddScoped<IAppUserDal, EFAppUserRepository>();
 
             services.AddScoped<ICommentServices, CommentManager>();
-            services.AddScoped<ICommentDal, EFCommentRepository>();
+            services.AddScoped<ICommentDal, EFCommentRepository>();         
+            
+            services.AddScoped<IAppUserServices, AppUserManager>();
+            services.AddScoped<IAppUserDal, EFAppUserRepository>();
 
-            //services.AddScoped<IJwtService, JwtManager>();
-            //services.AddScoped<ICustomLogger, NLogAdapter>();
+            services.AddScoped<IJwtServices, JwtManager>();
 
 
-            //services.AddTransient<IValidator<AppUserLoginDto>, AppUserLoginValidator>();
-            //services.AddTransient<IValidator<CategoryAddDto>, CategoryAddValidator>();
-            //services.AddTransient<IValidator<CategoryBlogDto>, CategoryBlogValidator>();
-            //services.AddTransient<IValidator<CategoryUpdateDto>, CategoryUpdateValidator>();
-            //services.AddTransient<IValidator<CommentAddDto>, CommentAddValidator>();
         }
     }
 }

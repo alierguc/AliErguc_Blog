@@ -2486,6 +2486,7 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "AliErguc.Blog.DataAccess": "1.0.0",
+          "AliErguc.Blog.Dto": "1.0.0",
           "AliErguc.Blog.Entities": "1.0.0",
           "FluentValidation.AspNetCore": "10.2.3"
         },
@@ -2525,6 +2526,9 @@
       "AliErguc.Blog.Dto/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "AliErguc.Blog.Entities": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/AliErguc.Blog.Dto.dll": {}
         },

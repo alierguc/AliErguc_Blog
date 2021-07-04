@@ -9,5 +9,6 @@ namespace AliErguc.Blog.WebUI.ApiServices.Interfaces
     public interface IBlogApiServices
     {
         Task<List<BlogListModel>> GetAllAsync();
+        Task<BlogListModel> GetByIdAsync(int id);
     }
 }

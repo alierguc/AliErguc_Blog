@@ -66,6 +66,21 @@
           "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.14": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.5.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.JsonPatch/3.1.14": {
         "type": "package",
         "dependencies": {
@@ -1556,6 +1571,7 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "AliErguc.Blog.DataAccess": "1.0.0",
+          "AliErguc.Blog.Dto": "1.0.0",
           "AliErguc.Blog.Entities": "1.0.0",
           "FluentValidation.AspNetCore": "10.2.3"
         },
@@ -1595,6 +1611,9 @@
       "AliErguc.Blog.Dto/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "AliErguc.Blog.Entities": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/AliErguc.Blog.Dto.dll": {}
         },
@@ -1693,6 +1712,21 @@
         "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml",
         "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll",
         "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.xml"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.14": {
+      "sha512": "/HlfEeETtagEM+HuLr7VzXAd6MkxLVUbXRWDEvzMPe3cNXl8ZbuPv8oaiAd99sBhXlOKemeQVZooi8nOeekuFA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/3.1.14",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
+        "microsoft.aspnetcore.authentication.jwtbearer.3.1.14.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
     "Microsoft.AspNetCore.JsonPatch/3.1.14": {
@@ -5815,6 +5849,7 @@
       "AliErguc.Blog.Business >= 1.0.0",
       "AliErguc.Blog.Dto >= 1.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 7.0.0",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.14",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 3.1.14",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
@@ -5873,6 +5908,10 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[7.0.0, )"
+          },
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[3.1.14, )"
           },
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
             "target": "Package",

@@ -22,7 +22,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Start Bootstrap</a>
+            <a class="navbar-brand" href="#">Ali Ergüç - Blog</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -30,21 +30,23 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">
+                            <i class="fa fa-home" aria-hidden="true"></i>
                             Anasayfa
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
 
                 </ul>
+                <hr />
                 <ul class="navbar-nav ms-md-auto">
                     <li class="nav-item">
-                        <a target="_blank" rel="noopener" class="nav-link" href="https://github.com/thomaspark/bootswatch/"><i class="fa fa-github"></i> GitHub</a>
+                        <a target="_blank" rel="noopener" class="nav-link" href="https://github.com/thomaspark/bootswatch/"><i class="fa fa-github"></i>&nbsp;GitHub</a>
                     </li>
                     <li class="nav-item">
-                        <a target="_blank" rel="noopener" class="nav-link" href="https://twitter.com/bootswatch"><i class="fa fa-instagram"></i> Instagram</a>
+                        <a target="_blank" rel="noopener" class="nav-link" href="https://twitter.com/bootswatch"><i class="fa fa-instagram"></i>&nbsp;Instagram</a>
                     </li>
                     <li class="nav-item">
-                        <a target="_blank" rel="noopener" class="nav-link" href="https://twitter.com/bootswatch"><i class="fa fa-linkedin"></i> Linkedin</a>
+                        <a target="_blank" rel="noopener" class="nav-link" href="https://twitter.com/bootswatch"><i class="fa fa-linkedin"></i>&nbsp;Linkedin</a>
                     </li>
                 </ul>
             </div>
@@ -72,48 +74,20 @@
 
                 <!-- Search Widget -->
                 <div class="card border-info my-4">
-                    <h5 class="card-header">Search</h5>
+                    <h5 class="card-header">Arama</h5>
                     <div class="card-body">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search for...">
+                            <input type="text" class="form-control" placeholder="İçeriğe Göre Ara...">
                             <span class="input-group-btn">
-                                <button class="btn btn-secondary" type="button">Go!</button>
+                                <button class="btn btn-secondary" type="button">Git</button>
                             </span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Categories Widget -->
-                <ul class="list-group">
-                    <li class="list-group-item d-flex bg-primary text-white list-group-item-action justify-content-between align-items-center">
-                        Kategoriler
-                    </li>
-                    <li class="list-group-item d-flex list-group-item-action justify-content-between align-items-center">
-                        Dapibus ac facilisis in
-                        <span class="badge bg-primary rounded-pill">2</span>
-                    </li>
-                    <li class="list-group-item d-flex list-group-item-action justify-content-between align-items-center">
-                        Dapibus ac facilisis in
-                        <span class="badge bg-primary rounded-pill">2</span>
-                    </li>
-                    <li class="list-group-item d-flex list-group-item-action justify-content-between align-items-center">
-                        Dapibus ac facilisis in
-                        <span class="badge bg-primary rounded-pill">2</span>
-                    </li>
-                    <li class="list-group-item d-flex list-group-item-action justify-content-between align-items-center">
-                        Dapibus ac facilisis in
-                        <span class="badge bg-primary rounded-pill">2</span>
-                    </li>
-                    <li class="list-group-item d-flex list-group-item-action justify-content-between align-items-center">
-                        Dapibus ac facilisis in
-                        <span class="badge bg-primary rounded-pill">2</span>
-                    </li>
-                    <li class="list-group-item d-flex list-group-item-action justify-content-between align-items-center">
-                        Dapibus ac facilisis in
-                        <span class="badge bg-primary rounded-pill">2</span>
-                    </li>
-                </ul>
-                @*@await Component.InvokeAsync("CategoryList")*@
+       
+                @await Component.InvokeAsync("CategoryList")
 
                 <!-- Side Widget -->
                 <div class="card border-info my-4">

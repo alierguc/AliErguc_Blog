@@ -7,10 +7,21 @@
     <div class="card text-white bg-primary mb-4">
         <a href="#!"><img class="card-img-top" src="https://dummyimage.com/850x350/dee2e6/6c757d.jpg" alt="..." /></a>
         <div class="card-body">
-            <div class="small text-muted">Yüklenme Tarihi : @blogItem.PostedTime.ToLongDateString();</div>
-            <h2 class="card-title">@blogItem.Title</h2>
-            <p class="card-text">@blogItem.ShortDescription</p>
-            <a class="btn btn-success" href="#!">Read more →</a>
+            <div class="small text-muted">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                Yüklenme Tarihi :&nbsp;&nbsp; @blogItem.PostedTime.ToLongDateString();
+            </div>
+            <br/>
+            <h2 class="card-title">
+                @blogItem.Title
+            </h2>
+            <p class="card-text">
+                <i class="fa fa-certificate" aria-hidden="true"></i>&nbsp;&nbsp;
+                @blogItem.ShortDescription
+            </p>
+            <a asp-action="BlogDetail" asp-route-id="@blogItem.Id" class="btn btn-success">
+                Yazının Devamı&nbsp;&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </a>
         </div>
     </div>
 }

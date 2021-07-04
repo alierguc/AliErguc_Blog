@@ -1547,6 +1547,19 @@
           "bin/placeholder/AliErguc.Blog.DataAccess.dll": {}
         }
       },
+      "AliErguc.Blog.Dto/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "AliErguc.Blog.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AliErguc.Blog.Dto.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AliErguc.Blog.Dto.dll": {}
+        }
+      },
       "AliErguc.Blog.Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -5829,6 +5842,11 @@
       "path": "../AliErguc.Blog.DataAccess/AliErguc.Blog.DataAccess.csproj",
       "msbuildProject": "../AliErguc.Blog.DataAccess/AliErguc.Blog.DataAccess.csproj"
     },
+    "AliErguc.Blog.Dto/1.0.0": {
+      "type": "project",
+      "path": "../AliErguc.Blog.Dto/AliErguc.Blog.Dto.csproj",
+      "msbuildProject": "../AliErguc.Blog.Dto/AliErguc.Blog.Dto.csproj"
+    },
     "AliErguc.Blog.Entities/1.0.0": {
       "type": "project",
       "path": "../AliErguc.Blog.Entities/AliErguc.Blog.Entities.csproj",
@@ -5838,6 +5856,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "AliErguc.Blog.DataAccess >= 1.0.0",
+      "AliErguc.Blog.Dto >= 1.0.0",
       "AliErguc.Blog.Entities >= 1.0.0",
       "FluentValidation.AspNetCore >= 10.2.3"
     ]
@@ -5876,6 +5895,9 @@
           "projectReferences": {
             "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.DataAccess\\AliErguc.Blog.DataAccess.csproj": {
               "projectPath": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.DataAccess\\AliErguc.Blog.DataAccess.csproj"
+            },
+            "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Dto\\AliErguc.Blog.Dto.csproj": {
+              "projectPath": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Dto\\AliErguc.Blog.Dto.csproj"
             },
             "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Entities\\AliErguc.Blog.Entities.csproj": {
               "projectPath": "D:\\myNETProjects\\AliErgucBlog\\AliErguc.Blog.Entities\\AliErguc.Blog.Entities.csproj"
