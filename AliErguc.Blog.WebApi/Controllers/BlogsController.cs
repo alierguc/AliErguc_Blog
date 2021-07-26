@@ -131,5 +131,12 @@ namespace AliErguc.Blog.WebApi.Controllers
             return NoContent();
         }
 
+        [HttpGet("[action]/{id}")]
+        //[ServiceFilter(typeof(ValidId<Category>))]
+        public async Task<IActionResult> GetAllByCategoryId(int id)
+        {
+           return Ok(await _blogServices.GetAllByCategoryIdAsync(id));
+        }
+
     }
 }

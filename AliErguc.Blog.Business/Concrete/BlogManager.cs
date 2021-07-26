@@ -13,8 +13,11 @@ namespace AliErguc.Blog.Business.Concrete
     {
         private readonly IGenericDal<BlogSection> _genericDal;
         private readonly IGenericDal<CategoryBlog> _categoryBlogService;
-        public BlogManager(IGenericDal<BlogSection> genericDal, IGenericDal<CategoryBlog> categoryBlogService) : base(genericDal)
+        private readonly IBlogDal _blogDal;
+        public BlogManager(IGenericDal<BlogSection> genericDal, 
+            IGenericDal<CategoryBlog> categoryBlogService, IBlogDal blogDal) : base(genericDal)
         {
+            _blogDal = blogDal;
             _genericDal = genericDal;
             _categoryBlogService = categoryBlogService;
         }
@@ -33,6 +36,11 @@ namespace AliErguc.Blog.Business.Concrete
 
                 });
             }
+        }
+
+        public async Task<List<BlogSection>> GetAllByCategoryIdAsync(int _categoryId)
+        {
+            return await _blogDal.GetAllByCategoryId(_categoryId);
         }
 
         public async Task<List<BlogSection>> GetAllSortedByPostedTimeAsync()

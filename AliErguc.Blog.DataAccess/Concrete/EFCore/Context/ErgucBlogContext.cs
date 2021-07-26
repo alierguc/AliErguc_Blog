@@ -28,5 +28,6 @@ namespace AliErguc.Blog.DataAccess.Concrete.EFCore.Context
         public DbSet<Category> Categories { get; set; } 
         public DbSet<CategoryBlog> CategoryBlogs { get; set; } 
         public DbSet<Comment> Comments { get; set; } 
+        public DbSet<BlogSection> BlogSection { get; set; } 
     }
 }

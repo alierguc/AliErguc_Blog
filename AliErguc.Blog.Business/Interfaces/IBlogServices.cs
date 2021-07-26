@@ -12,5 +12,6 @@ namespace AliErguc.Blog.Business.Interfaces
         Task<List<BlogSection>> GetAllSortedByPostedTimeAsync();
         Task AddToCategoryAsync(CategoryBlogDto categoryBlogDto);
         Task RemoveToCategoryAsync(CategoryBlogDto categoryBlogDto);
+        Task<List<BlogSection>> GetAllByCategoryIdAsync(int _categoryId);
     }
 }
